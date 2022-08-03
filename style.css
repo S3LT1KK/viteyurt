@@ -13,29 +13,3 @@ body {
 	padding: 0 20px;
 	margin: 0 auto;
 }
-
-.comf {
-   font-family: 'Conv_Comfortaa-Regular';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 96px;
-   line-height: 107px;
-   color: #FFCC86;
-}
-.monst {
-   font-family: 'Conv_Montserrat-Light';
-   font-style: normal;
-   font-weight: 300;
-   font-size: 20px;
-   line-height: 24px;
-   display: flex;
-   align-items: center;
-
-   color: #000000;
-}
-
-.test {
-   font-size: 30px;
-   background: var(--color-main);
-   color: white;
-}
