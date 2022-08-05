@@ -1,0 +1,81 @@
+.header {
+	background: var(--color-main);
+   
+   width: 100%;
+}
+
+.header__wrapper {
+	display: flex;
+   justify-content: space-between;
+	align-items: center;
+   height: 100px;
+}
+
+.header__logo-link {
+   margin-right: 10px;
+}
+
+.header__list {
+	display: flex;
+	gap: 26px;
+   margin-right: 10px;
+}
+
+@media screen and (max-width:1080px) {
+   .header__list {
+      gap: 13px;
+   }
+}
+
+.header__link {
+   font-family: 'Conv_Montserrat-SemiBold';
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: #FFFFFF;
+}
+
+.header__contact-link {
+	display: flex;
+	align-items: center;
+}
+
+.header__contact-number {
+   font-family: 'Conv_Montserrat-Bold';
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 22px;
+   color: #FFFFFF;
+}
+
+.header__booking {
+   width: 220px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #FFCC86;
+   border-radius: 8px;
+}
+
+.header__booking-link {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Conv_Montserrat-SemiBold';
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: #133131;
+   border-radius: 8px;
+}
+
+.header__booking:hover {
+   background-color: #FDB048;
+}
+
+.header__booking-link:focus {
+   background-color: #7E9B9B;
+}
