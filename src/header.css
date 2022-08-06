@@ -1,6 +1,6 @@
 .header {
 	background: var(--color-main);
-   
+   position: fixed;
    width: 100%;
 }
 
