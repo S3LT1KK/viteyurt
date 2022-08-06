@@ -2,6 +2,7 @@
 	background: var(--color-main);
    position: fixed;
    width: 100%;
+   z-index: 120;
 }
 
 .header__wrapper {
