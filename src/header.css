@@ -29,7 +29,7 @@
 }
 
 .header__link {
-   font-family: 'Conv_Montserrat-SemiBold';
+   font-family: 'Montserrat-SemiBold';
    font-weight: 600;
    font-size: 18px;
    line-height: 22px;
@@ -42,7 +42,7 @@
 }
 
 .header__contact-number {
-   font-family: 'Conv_Montserrat-Bold';
+   font-family: 'Montserrat-Bold';
    font-weight: 700;
    font-size: 18px;
    line-height: 22px;
@@ -65,7 +65,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   font-family: 'Conv_Montserrat-SemiBold';
+   font-family: 'Montserrat-SemiBold';
    font-weight: 600;
    font-size: 18px;
    line-height: 22px;

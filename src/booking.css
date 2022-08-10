@@ -1,0 +1,152 @@
+.booking {
+   width: 100%;
+   margin: 0 0 150px 0;
+}
+
+.booking__title {
+   font-family: 'Montserrat-SemiBold';
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 49px;
+   display: flex;
+   align-items: center;
+   color: #133131;
+   margin: 0px 0px 50px 0px;
+}
+.booking__text {
+   font-family: 'Montserrat-Light';
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 24px;
+   color: #000000;
+   margin: 0px 0px 50px 0px;
+   max-width: 650px;
+   text-align: left;
+}
+
+.booking__columns {
+   margin: 0 0 40px 0;
+}
+
+.columns__wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+}
+
+.rezervation-text {
+   display: flex;
+   justify-content: space-around;
+   margin: 90% 0 25px 0;
+   font-family: 'Montserrat-SemiBold';
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 39px;
+   color: #FFFFFF;
+   
+}
+
+.rezervation-moreinfo {
+   font-family: 'Montserrat-SemiBold';
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   text-decoration-line: underline;
+   color: #FFCC86;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.rezervation-moreinfo-link {
+   color: #FFCC86;
+}
+
+.booking__card1 {
+   width: 100%;
+   height: 100%;
+   
+   background-image: url(/assets/src/campingpic1.png);
+   background-position: center center; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+
+   
+}
+
+.booking__card2 {
+   width: 100%;
+   height: 100%;
+   
+   background-image: url(/assets/src/campingpic2.png);
+   background-position: center center; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   
+
+}
+
+.booking__card3 {
+   width: 100%;
+   height: 100%;
+   
+   background-image: url(/assets/src/campingpic3.png);
+   background-position: center center; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   
+
+}
+
+.btn-wrapper {
+   display: flex;
+   justify-content: center;
+   margin: 0 0 25px 0;
+}
+
+.rezervation__booking {
+   width: 220px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #FFCC86;
+   border-radius: 8px;
+}
+
+.rezervation__booking-link {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Montserrat-SemiBold';
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: #133131;
+   border-radius: 8px;
+}
+
+.rezervation__booking:hover {
+   background-color: #FDB048;
+}
+
+.rezervation__booking-link:focus {
+   background-color: #7E9B9B;
+}
+
+.booking__bottomtext1 {
+   font-family: 'Montserrat-Light';
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 24px;
+   color: #000000;
+}
+
+.booking__bottomtext2 {
+   font-family: 'Montserrat-Regular';
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   color: #000000;
+}

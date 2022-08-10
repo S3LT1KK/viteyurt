@@ -53,7 +53,7 @@
    padding:264px 0px 31px 0px;
    margin: 0 auto;
    text-align: center;
-   font-family: 'Conv_Comfortaa-Regular';
+   font-family: 'Comfortaa-Regular';
    font-weight: 400;
    font-size: 96px;
    line-height: 107px;
@@ -61,6 +61,8 @@
 }
 
 .main__text-1 {
+   font-family: 'Montserrat-Light';
+   font-weight: 300;
    max-width: 927px;
    margin: 0px auto 81px auto;
    font-size: 28px;
@@ -73,6 +75,8 @@
 }
 
 .main__text-2 {
+   font-family: 'Montserrat-Light';
+   font-weight: 300;
    max-width: 700px;
    margin: 81px auto 41px auto;
    font-size: 20px;
