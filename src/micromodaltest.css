@@ -18,16 +18,31 @@
    align-items: center;
    z-index: 121;
  }
+
+ @media screen and (max-width: 768px) {
+   .modal__overlay {
+      align-items: flex-end;
+    }
+}
  
  .modal__container {
+   position: relative;
    background-color: #fff;
-   padding: 10px 20px 0px 0px;
-   max-width: 1170px;
-   max-height: 100vh;
-   border-radius: 4px;
+   padding: 10px 20px 0px 20px;
+   max-width: 1210px;
+   max-height: 90%;
+   border-radius: 10px;
    overflow-y: auto;
    box-sizing: border-box;
  }
+
+ @media screen and (max-width: 768px) {
+   .modal__container {
+      max-width: 768px;
+      max-height: 85%;
+      padding: 0 20px;
+    }
+}
  
  .modal__header {
    display: flex;
@@ -47,17 +62,35 @@
 }
 
 .modal__close:hover {
+   content: "\2715"; 
+   font-size: 36px;
    color: #133131;
 }
  
  .modal__content {
  }
 
+ @media screen and (max-width: 768px) {
+   .modal__content {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
  .modal__toptext {
    display: flex;
    justify-content: space-around;
    align-items: flex-end;
    margin-bottom: 65px;
+}
+
+@media screen and (max-width: 768px) {
+   .modal__toptext {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+   }
 }
  
 .modal__toptext-title {
@@ -89,13 +122,39 @@
    border-bottom: 4px #FFCC86 solid;
 }
 
+@media screen and (max-width: 768px) {
+   .modal__toptext-title2 {
+      align-self: center;
+   }
+}
+
 .modal__columns {
    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+   .modal__columns {
+      flex-direction: column;
+      order:3;
+   }
 }
 
 .modal__columns-img {
    margin: 0 50px 0 0;
 }
+
+@media screen and (max-width: 768px) {
+   .modal__columns-img {
+      margin: 0 auto 30px auto;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .modal__columns-img img {
+      max-width: 320px;
+   }
+}
+
 
 .modal__columns-list {
    font-family: 'Montserrat-Light';
@@ -119,6 +178,17 @@
    justify-content: center;
    margin: 40px 0 53px 50px;
 }
+
+@media screen and (max-width: 768px) {
+   .modal__btn-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0 53px 0px;
+      order: 2;
+   }
+}
+
+
 .modal__booking {
    width: 220px;
    height: 50px;
@@ -141,6 +211,14 @@
    color: #133131;
    border-radius: 8px;
 }
+
+.modal__booking:hover {
+   background-color: #FDB048;
+}
+
+/*.modal__booking-link:focus {
+   background-color: #7E9B9B;
+}*/
  
  /**************************\
    Demo Animation Style
