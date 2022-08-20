@@ -25,7 +25,7 @@ if (iconMenu) {
    });
 }
 
-document.querySelectorAll("li").forEach(function (elem) {
+document.querySelectorAll(".header__link").forEach(function (elem) {
    elem.addEventListener('click', function (ev) {
       document.body.classList.remove('_lock');
       iconMenu.classList.toggle('_active');
