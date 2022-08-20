@@ -6,20 +6,79 @@
 }
 
 .header__wrapper {
-	display: flex;
+   display: flex;
    justify-content: space-between;
-	align-items: center;
-   height: 100px;
+   margin: 0 auto;
+}
+
+@media screen and (min-width:880px) {
+   .header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+   }
+}
+
+@media screen and (max-width:879px) {
+   .header__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+
+@media screen and (max-width:480px) {
+   .header__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+   }
 }
 
 .header__logo-link {
    margin-right: 10px;
+   z-index: 5;
+
+}
+
+.header__logo {
+   z-index: 5;
+}
+
+@media screen and (max-width: 480px) {
+   .header__logo {
+      
+   }
+}
+
+.header__logo img {
+   z-index: 5;
+}
+
+
+.menu__body {
+   display: flex;
+}
+
+@media screen and (min-width:880px) {
+   .menu__body {
+      display: flex;
+      align-items: center;
+   }
 }
 
 .header__list {
-	display: flex;
 	gap: 26px;
    margin-right: 10px;
+}
+
+@media screen and (min-width:880px) {
+   .header__list {
+      display: flex;
+      align-items: center;
+   }
 }
 
 @media screen and (max-width:1080px) {
@@ -27,6 +86,8 @@
       gap: 13px;
    }
 }
+
+
 
 .header__link {
    font-family: 'Montserrat-SemiBold';
@@ -36,18 +97,46 @@
    color: #FFFFFF;
 }
 
-.header__contact-link {
-	display: flex;
-	align-items: center;
+.header__link:hover {
+   color: #FFCC86;
 }
 
-.header__contact-number {
-   font-family: 'Montserrat-Bold';
-   font-weight: 700;
+.header__link:focus {
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+
+.header__contact {
+   margin: 0 10px 0 0;
+   display: flex;
+   align-items: center;
+}
+
+@media screen and (max-width:879px) {
+   .header__contact {
+      margin: 0 10px 30px 0;
+   }
+}
+
+.header__contact-link {
+	display: flex;
+   align-items: center;
+   font-family: 'Montserrat-SemiBold';
+   font-weight: 600;
    font-size: 18px;
    line-height: 22px;
    color: #FFFFFF;
 }
+
+.header__contact-link:hover {
+   color: #FFCC86;
+}
+
+.header__contact-link:focus {
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+
 
 .header__booking {
    width: 220px;
@@ -77,6 +166,98 @@
    background-color: #FDB048;
 }
 
-.header__booking-link:focus {
-   background-color: #7E9B9B;
+/*.header__booking-link:focus {
+   background-color: #CB882B;
+}*/
+
+.menu__icon {
+   display: none;
+}
+
+@media screen and (max-width: 879px) {
+   
+   .menu__icon {
+      z-index: 5;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+   }
+   .menu__icon span,
+   .menu__icon:before,
+   .menu__icon:after {
+      left: 0;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #FFCC86;
+   }
+   .menu__icon:before,
+   .menu__icon:after {
+      content: "";
+   }
+   .menu__icon:before {
+      top: 0;
+   }
+   .menu__icon:after {
+      bottom: 0;
+   }
+   .menu__icon span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+   }
+
+   .menu__icon._active span {
+      transform: scale(0) translate(0px, 0px);
+   }
+
+   .menu__icon._active:before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+   }
+
+   .menu__icon._active:after{
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+   }
+
+   .menu__body {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-main) ;
+      padding: 100px 30px 30px 30px;
+      transition: all 0.3s ease 0s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      overflow: auto;
+   }
+
+   .menu__body._active {
+      left: 0;
+   }
+
+   .menu__body:before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 70px;
+      background-color: var(--color-main);
+      z-index: 2;
+   }
+
+   .header__list li {
+      margin-bottom: 30px;
+   }
+   .header__logo {
+      padding: 20px 0;
+   }
 }

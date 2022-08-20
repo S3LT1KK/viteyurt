@@ -5,6 +5,7 @@
    <meta charset="UTF-8" />
    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Vite App</title>
 </head>
@@ -15,7 +16,12 @@
    {{> camping}}
    {{> booking}}
    {{> micromodaltest}}
+   <script src="https://pms.frontdesk24.ru/onlineWidget/bookWidget.js"></script>
+   <script>
+      FD24BookWidget.createWidget("book-widget", "A567027F-C567-4256-BE31-DC98E906CE93", undefined);
+   </script>
    <script type="module" src="/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </body>
 

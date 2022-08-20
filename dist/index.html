@@ -5,45 +5,49 @@
    <meta charset="UTF-8" />
    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Vite App</title>
-  <script type="module" crossorigin src="/assets/index.cbab6ca8.js"></script>
-  <link rel="stylesheet" href="/assets/index.071391ad.css">
+  <script type="module" crossorigin src="/assets/index.73628ab0.js"></script>
+  <link rel="stylesheet" href="/assets/index.7a84b3e6.css">
 </head>
 
 <body>
    <header class="header">
       <div class="container">
          <div class="header__wrapper">
-            <div class="header__logo">
-               <a href="/" class="header__logo-link">
-                  <img src="/assets/logo.43b55b72.svg" alt="logo" class="header__logo" />
-               </a>
+            <a href="/" class="header__logo-link">
+               <img src="/assets/logo.3c23d8bd.svg" alt="logo" class="header__logo" />
+            </a>
+            <div class="menu__body">
+               <ul class="header__list">
+                  <li class="header__item">
+                     <a href="#camping" class="header__link">О нас</a>
+                  </li>
+                  <li class="header__item">
+                     <a href="#booking" class="header__link">Бронирование</a>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Чем заняться</a>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Вопрос/ответ</a>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Контакты</a>
+                  </li>
+               </ul>
+               <div class="header__contact">
+                  <a href="tel: 79199149511" class="header__contact-link">
+                     +7-909-066-09-06
+                  </a>
+               </div>
+               <div class="header__booking">
+                  <a data-micromodal-trigger="modal-4" href="javascript:;" class="header__booking-link">Забронировать</a>
+               </div>
             </div>
-            <ul class="header__list">
-               <li class="header__item">
-                  <a href="#" class="header__link">О нас</a>
-               </li>
-               <li class="header__item">
-                  <a href="#" class="header__link">Бронирование</a>
-               </li>
-               <li class="header__item">
-                  <a href="#" class="header__link">Чем заняться</a>
-               </li>
-               <li class="header__item">
-                  <a href="#" class="header__link">Вопрос/ответ</a>
-               </li>
-               <li class="header__item">
-                  <a href="#" class="header__link">Контакты</a>
-               </li>
-            </ul>
-            <div class="header__contact">
-               <a href="tel: 79199149511" class="header__contact-link">
-                  <span class="header__contact-number">+7-909-066-09-06</span>
-               </a>
-            </div>
-            <div class="header__booking">
-               <a href="" class="header__booking-link">Забронировать</a>
+            <div class="menu__icon">
+               <span></span>
             </div>
          </div>
       </div>
@@ -66,63 +70,58 @@
             </a>
          </div>
       </div>
-   </div>   <div class="camping">
+   </div>   <div id="camping" class="camping">
+      <img class="ornament-img1" src="data:image/png;base64,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" alt="ornament">
+      <img class="ornament-img2" src="data:image/png;base64,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" alt="ornament">
+      <img class="ornament-img3" src="data:image/png;base64,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" alt="ornament">
+      <img class="ornament-img4" src="/assets/ornament_2.6604a951.png" alt="ornament">
       <div class="container">
          <div class="camping__title">О кемпинге</div>
          <div class="camping__text">Всего 30 минут от Ижевска и вы уже оказываетесь на лодках с друзьями, либо проводите
             время в сборе грибов в окружении высоченных сосен или устраиваете уютный вечер с барбекю и настольными играми
             со своей семьёй под берёзами, а восход Солнца встречаете на своей террасе свежесваренным травяным чаем
             с цветочным мёдом.</div>
-         <section id="slider_bl">
-            <div class="wrapper">
-               <input checked type=radio name="slider" id="slide1" />
-               <input type=radio name="slider" id="slide2" />
-               <input type=radio name="slider" id="slide3" />
-               <input type=radio name="slider" id="slide4" />
-               <input type=radio name="slider" id="slide5" />
-               <input type=radio name="slider" id="slide6" />
-               <div class="slider-wrapper">
-                  <div class=inner>
-                     <article>
-                        <img src="/assets/1.1e9e3760.png" />
-                     </article>
-                     <article>
-                        <img src="/assets/2.ce969b7d.png" />
-                     </article>
-                     <article>
-                        <img src="/assets/3.dea04d31.png" />
-                     </article>
-                     <article>
-                        <img src="/assets/4.c1848bf5.png" />
-                     </article>
-                     <article>
-                        <img src="/assets/5.1380ca1f.png" />
-                     </article>
-                     <article>
-                        <img src="/assets/6.e08f8e86.png" />
-                     </article>
-                  </div>
+         <div class="slider__bl">
+            <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide">
+                  <img src="/assets/1.1e9e3760.png" alt="">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
                </div>
-               <div class="slider-prev-next-control">
-                  <label for=slide1></label>
-                  <label for=slide2></label>
-                  <label for=slide3></label>
-                  <label for=slide4></label>
-                  <label for=slide5></label>
-                  <label for=slide6></label>
+               <div class="swiper-slide">
+                  <img src="/assets/2.ce969b7d.png" alt="">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
                </div>
-               <div class="slider-dot-control">
-                  <label for=slide1></label>
-                  <label for=slide2></label>
-                  <label for=slide3></label>
-                  <label for=slide4></label>
-                  <label for=slide5></label>
-                  <label for=slide6></label>
+               <div class="swiper-slide">
+                  <img src="/assets/3.dea04d31.png" alt="">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </div>
+               <div class="swiper-slide">
+                  <img src="/assets/4.c1848bf5.png" alt="">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </div>
+               <div class="swiper-slide">
+                  <img src="/assets/5.1380ca1f.png" alt="">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </div>
+               <div class="swiper-slide">
+                  <img src="/assets/6.e08f8e86.png" alt="">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
                </div>
             </div>
-         </section>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+         </div>
       </div>
-   </div>   <div class="booking">
+   </div>   <div id="booking" class="booking">
+      <img class="ornament-img5" src="/assets/ornament_2.6604a951.png" alt="ornament">
       <div class="container">
          <div class="booking__title">Где мы будем жить</div>
          <div class="booking__text">На территории Юрт-а, в живописных местах построены комфортабельные и очень красивые
@@ -131,48 +130,57 @@
          <section class="booking__columns">
             <div class="columns__wrapper">
                <div class="booking__card1">
-                  <div class="rezervation-text">
+                  <div class="rezervation-text-card1">
                      <p class="rezervation__title">Палатка</p>
                      <p class="rezervation__title2">1000 р.</p>
                   </div>
-                  <div class="btn-wrapper">
-                     <div class="rezervation__booking">
-                        <a href="" class="rezervation__booking-link">Забронировать</a>
+                  <div class="booking__rezerv-moreinfo">
+                     <div class="btn-wrapper">
+                        <div class="rezervation__booking">
+                           <a data-micromodal-trigger="modal-4" href="javascript:;"
+                              class="rezervation__booking-link">Забронировать</a>
+                        </div>
                      </div>
-                  </div>
-                  <div class="rezervation-moreinfo">
-                     <a data-micromodal-trigger="modal-1" href="javascript:;" class="rezervation-moreinfo-link">Узнать
-                        больше</a>
+                     <div class="rezervation-moreinfo">
+                        <a data-micromodal-trigger="modal-1" href="javascript:;" class="rezervation-moreinfo-link">Узнать
+                           больше</a>
+                     </div>
                   </div>
                </div>
                <div class="booking__card2">
-                  <div class="rezervation-text">
+                  <div class="rezervation-text-card2">
                      <p class="rezervation__title">Шатер</p>
                      <p class="rezervation__title2">1800 р.</p>
                   </div>
-                  <div class="btn-wrapper">
-                     <div class="rezervation__booking">
-                        <a href="" class="rezervation__booking-link">Забронировать</a>
+                  <div class="booking__rezerv-moreinfo">
+                     <div class="btn-wrapper">
+                        <div class="rezervation__booking">
+                           <a data-micromodal-trigger="modal-4" href="javascript:;"
+                              class="rezervation__booking-link">Забронировать</a>
+                        </div>
                      </div>
-                  </div>
-                  <div class="rezervation-moreinfo">
-                     <a data-micromodal-trigger="modal-2" href="javascript:;" class="rezervation-moreinfo-link">Узнать
-                        больше</a>
+                     <div class="rezervation-moreinfo">
+                        <a data-micromodal-trigger="modal-2" href="javascript:;" class="rezervation-moreinfo-link">Узнать
+                           больше</a>
+                     </div>
                   </div>
                </div>
                <div class="booking__card3">
-                  <div class="rezervation-text">
+                  <div class="rezervation-text-card3">
                      <p class="rezervation__title">Номер</p>
                      <p class="rezervation__title2">2200 р.</p>
                   </div>
-                  <div class="btn-wrapper">
-                     <div class="rezervation__booking">
-                        <a href="" class="rezervation__booking-link">Забронировать</a>
+                  <div class="booking__rezerv-moreinfo">
+                     <div class="btn-wrapper">
+                        <div class="rezervation__booking">
+                           <a data-micromodal-trigger="modal-4" href="javascript:;"
+                              class="rezervation__booking-link">Забронировать</a>
+                        </div>
                      </div>
-                  </div>
-                  <div class="rezervation-moreinfo">
-                     <a data-micromodal-trigger="modal-3" href="javascript:;" class="rezervation-moreinfo-link">Узнать
-                        больше</a>
+                     <div class="rezervation-moreinfo">
+                        <a data-micromodal-trigger="modal-3" href="javascript:;" class="rezervation-moreinfo-link">Узнать
+                           больше</a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -188,7 +196,8 @@
             </header>
             <main class="modal__content" id="modal-1-content">
                <div class="modal__toptext">
-                  <p class="modal__toptext-title">Палатка на деревянной платформе</p>
+                  <p class="modal__toptext-title"><span class="modal__toptext-title-firstword">Палатка&nbsp;</span>на
+                     деревянной платформе</p>
                   <p class="modal__toptext-title2">1000 р.</p>
                </div>
                <div class="modal__columns">
@@ -214,7 +223,7 @@
                </div>
                <div class="modal__btn-wrapper">
                   <div class="modal__booking">
-                     <a href="" class="modal__booking-link">Забронировать</a>
+                     <a data-micromodal-trigger="modal-4" href="javascript:;" class="modal__booking-link">Забронировать</a>
                   </div>
                </div>
             </main>
@@ -230,12 +239,13 @@
             </header>
             <main class="modal__content" id="modal-1-content">
                <div class="modal__toptext">
-                  <p class="modal__toptext-title">Шатер тентовый</p>
+                  <p class="modal__toptext-title"><span class="modal__toptext-title-firstword">Шатер&nbsp;</span>тентовый
+                  </p>
                   <p class="modal__toptext-title2">1800 р.</p>
                </div>
                <div class="modal__columns">
                   <div class="modal__columns-img">
-                     <img src="/assets/popuppic1.babf25eb.png" alt="">
+                     <img src="/assets/popuppic2.3c7204db.png" alt="">
                   </div>
                   <div class="modal__columns-text">
                      <ul class="modal__columns-list">
@@ -251,7 +261,7 @@
                </div>
                <div class="modal__btn-wrapper">
                   <div class="modal__booking">
-                     <a href="" class="modal__booking-link">Забронировать</a>
+                     <a data-micromodal-trigger="modal-4" href="javascript:;" class="modal__booking-link">Забронировать</a>
                   </div>
                </div>
             </main>
@@ -267,12 +277,13 @@
             </header>
             <main class="modal__content" id="modal-1-content">
                <div class="modal__toptext">
-                  <p class="modal__toptext-title">Номер в Барн доме</p>
+                  <p class="modal__toptext-title"><span class="modal__toptext-title-firstword">Номер&nbsp;</span>в Барн
+                     доме</p>
                   <p class="modal__toptext-title2">2200 р.</p>
                </div>
                <div class="modal__columns">
                   <div class="modal__columns-img">
-                     <img src="/assets/popuppic1.babf25eb.png" alt="">
+                     <img src="/assets/popuppic3.53b59995.png" alt="">
                   </div>
                   <div class="modal__columns-text">
                      <ul class="modal__columns-list">
@@ -287,13 +298,31 @@
                </div>
                <div class="modal__btn-wrapper">
                   <div class="modal__booking">
-                     <a href="" class="modal__booking-link">Забронировать</a>
+                     <a data-micromodal-trigger="modal-4" href="javascript:;" class="modal__booking-link">Забронировать</a>
                   </div>
                </div>
             </main>
          </div>
       </div>
-   </div>   
+   </div>
+   
+   <div class="modal micromodal-slide" id="modal-4" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+         <div class="modal__container-widget" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+               <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+               <div id="book-widget" class="div"></div>
+            </main>
+         </div>
+      </div>
+   </div>   <script src="https://pms.frontdesk24.ru/onlineWidget/bookWidget.js"></script>
+   <script>
+      FD24BookWidget.createWidget("book-widget", "A567027F-C567-4256-BE31-DC98E906CE93", undefined);
+   </script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </body>
 

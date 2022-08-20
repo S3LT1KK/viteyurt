@@ -1,6 +1,28 @@
 .booking {
+   position: relative;
    width: 100%;
    margin: 0 0 150px 0;
+}
+
+@media screen and (max-width: 768px) {
+   .booking {
+      margin: 0 0 120px 0;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .booking {
+      margin: 0 0 50px 0;
+   }
+}
+
+.ornament-img5 {
+   position: absolute;
+   width: 203px;
+   height: 114px;
+   bottom: 6%;
+   left: 4%;
+   z-index: -1;
 }
 
 .booking__title {
@@ -13,6 +35,21 @@
    color: #133131;
    margin: 0px 0px 50px 0px;
 }
+
+@media screen and (max-width: 768px) {
+   .booking__title {
+      margin: 0px 0px 30px 0px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .booking__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0px 0px 20px 0px;
+   }
+}
+
 .booking__text {
    font-family: 'Montserrat-Light';
    font-weight: 300;
@@ -22,6 +59,20 @@
    margin: 0px 0px 50px 0px;
    max-width: 650px;
    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+   .booking__text {
+      margin: 0px 0px 30px 0px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .booking__text {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0px 0px 40px 0px;
+   }
 }
 
 .booking__columns {
@@ -64,6 +115,16 @@
    }
 }
 
+@media screen and (max-width: 400px) {
+   .rezervation-text-card1, .rezervation-text-card2, .rezervation-text-card3{
+      padding: 0 30px;
+      margin: 90% 0px 25px 0;
+      justify-content: space-between;
+      font-size: 20px;
+      line-height: 24px;
+   }
+}
+
 
 .rezervation-moreinfo {
    font-family: 'Montserrat-SemiBold';
@@ -74,6 +135,13 @@
    color: #FFCC86;
 	text-align: center;
 	margin: 0 0 30px 0;
+}
+
+@media screen and (max-width: 400px) {
+   .rezervation-moreinfo {
+      font-size: 16px;
+      line-height: 20px;
+   }
 }
 
 .rezervation-moreinfo-link {
@@ -177,9 +245,9 @@
    background-color: #FDB048;
 }
 
-.rezervation__booking-link:focus {
+/*.rezervation__booking-link:focus {
    background-color: #7E9B9B;
-}
+}*/
 
 .booking__bottomtext1 {
    font-family: 'Montserrat-Light';
@@ -189,10 +257,26 @@
    color: #000000;
 }
 
+@media screen and (max-width: 400px) {
+   .booking__bottomtext1 {
+      font-size: 16px;
+      line-height: 20px;
+   }
+}
+
 .booking__bottomtext2 {
    font-family: 'Montserrat-Regular';
    font-weight: 400;
    font-size: 24px;
    line-height: 29px;
    color: #000000;
+}
+
+@media screen and (max-width: 400px) {
+   .booking__bottomtext2 {
+      font-family: 'Montserrat-SemiBold';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+   }
 }
