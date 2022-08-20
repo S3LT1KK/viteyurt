@@ -1,0 +1,72 @@
+.map { 
+  position: relative;
+  height: 400px;
+  margin-top: 100px;
+}
+.contacts-wrap {
+  max-width: 1170px;   
+  margin: 0 auto;  
+}
+.contacts {    
+  background: rgba(19, 49, 49, 0.8);;
+  height: 401px;
+  max-width: 500px; 
+  padding: 48px 80px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  font-weight: 300;
+  font-size: 20px;  
+  font-family: 'Montserrat';
+  font-style: normal;  
+  line-height: 24px;
+}
+.contacts h2 {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: 'Montserrat';
+  font-style: normal;   
+  line-height: 49px;
+}
+.contacts p {
+  margin-bottom: 10px;
+}
+.contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+.phone {
+  margin: 30px 0px;
+}
+
+
+@media  (max-width: 1188px) {
+  .contacts-wrap {
+    max-width: 768px;
+  }
+  .ornament-img1 {
+    display: none;
+  }
+  .ornament-img2 {
+    display: none;
+  }
+  .ornament-img3 {
+    display: none;
+  }
+  .ornament-img4 {
+    display: none;
+  }
+  .contacts {
+    left: 0;
+  }
+}
+
+@media  (max-width: 390px) {
+  .contacts {
+    width: 100%;
+    top: 400px;
+  }
+  .map {
+    height: 800px;
+  }
+}
