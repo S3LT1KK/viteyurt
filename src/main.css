@@ -154,6 +154,11 @@
    margin: 0px 0px 30px 0px;
 }
 
+.main__icon:hover {
+   transform: translateY(10px);
+   transition: 2s;
+}
+
 @media screen and (max-width: 768px) {
    .main__icon {
       margin: 0px 0px 35px 0px;
