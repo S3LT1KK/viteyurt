@@ -6,7 +6,7 @@
 .main-title {
   max-width: 1210px;
   margin: auto;
-  font-family: Montserrat-SemiBold;
+  font-family: 'Montserrat-SemiBold';
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
@@ -59,7 +59,7 @@
   font-size: 28px;
 }
 .characteristics__title p {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Light';
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -68,7 +68,7 @@
 }
 .characteristics__item-description {
   padding: 15px 30px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Light';
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
