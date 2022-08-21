@@ -198,7 +198,7 @@
  .swiper-slide img{
    position: relative;
  }
- .swiper-slide::before {
+ .swiper-slide img::before {
    content: '';
    position: absolute;
    top: 0;
