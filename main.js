@@ -59,10 +59,10 @@ const swiper = new Swiper('.swiper', {
    slidesPerView: 3,
    slidesPerColumn: 2,
    spaceBetween: '5%',
-   autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-   },
+   // autoplay: {
+   //    delay: 5000,
+   //    disableOnInteraction: false,
+   // },
 
    // If we need pagination
    pagination: {
