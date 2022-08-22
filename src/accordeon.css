@@ -18,21 +18,25 @@
   position: absolute;
   top: -22%;
   left: 2%;
+  width: auto;
 }
 .accordeon .ornament-img2 {
   position: absolute;
   top: -22%;
   right: 2%;
+  width: auto;
 }
 .accordeon .ornament-img3 {
   position: absolute;
   top: 40%;
   left: 70%;  
+  width: auto;
 }
 .accordeon .ornament-img4 {
   position: absolute;  
   bottom: -10%;
   right: 3%;
+  width: auto;
 }
 
 .characteristics__list {
@@ -143,7 +147,7 @@ button .active {
     margin: 0 auto;
   }
   .characteristics__title {    
-    padding: 0px 15px;
+    padding: 0px 10px;
     height: 100px;    
   }
   .characteristics__title p {
@@ -179,7 +183,7 @@ button .active {
 }
 @media (max-width: 600px) {
   .characteristics__title p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .characteristics__item-description {
     padding: 15px 20px;
@@ -194,11 +198,10 @@ button .active {
     height: 100px;    
   }
   .characteristics__title p {
-    width: 70%;
-    font-size: 16px;
+    font-size: 14px;
   }
   .characteristics__item-description {
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px 5px;
   }
   .container {

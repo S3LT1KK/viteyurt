@@ -2,7 +2,7 @@
   height: 200px;
   background-color: var(--color-main);
   padding: 20px 0px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-SemiBold';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -47,7 +47,7 @@
   height: 20px;
 }
 .footer-social a img {
-  height: 20px;
+  height: 48px;
   margin-left: 15px;  
 }
 
@@ -58,6 +58,7 @@
  color: #fff;
  margin-right: 30px;
  user-select: none;
+ text-decoration: underline;
 }
 
 

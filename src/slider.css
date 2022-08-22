@@ -8,7 +8,7 @@
     max-width: 1210px;
     margin: 0 auto;
     padding-left: 20px;
-    font-family: Montserrat-SemiBold;
+    font-family: 'Montserrat-SemiBold';
     font-weight: 600;
     font-size: 40px;
     line-height: 49px;
@@ -95,7 +95,7 @@
     text-align: center;
     padding: 40px;
     visibility: hidden;
-    font-family: Montserrat-Light;
+    font-family:'Montserrat-Light';
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
@@ -137,6 +137,24 @@
     .slider h2 {
         max-width: 350px;
         margin: 0;
+    }
+    .slider .swiper-button-next {
+        display: none;
+    }
+    .slider .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .swiper-slide p {
+        padding: 40px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .swiper-slide p {
+        font-size: 16px;
     }
 }
 
