@@ -2,10 +2,25 @@
   width: 100%;
   margin: auto;
   position: relative;
+  padding-top: 150px;
 }
+
+@media screen and (max-width:768px) {
+   .accordeon {
+      padding-top: 100px;
+   }
+}
+
+@media screen and (max-width:400px) {
+   .accordeon {
+      padding-top: 80px;
+   }
+}
+
+
 .main-title {
   max-width: 1210px;
-  margin: auto;
+  margin: 0 auto;
   font-family: 'Montserrat-SemiBold';
   font-weight: 600;
   font-size: 40px;
@@ -189,7 +204,7 @@ button .active {
     padding: 15px 20px;
   }
 }
-@media  (max-width: 390px) {
+@media  (max-width: 400px) {
   .accordeon {
     width: 100%;
   }

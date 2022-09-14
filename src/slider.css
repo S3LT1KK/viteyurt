@@ -2,7 +2,21 @@
     overflow: hidden;
     width: 100%;
     position: relative;
+    padding-top: 150px;
 }
+
+@media screen and (max-width:768px) {
+   .slider {
+      padding-top: 100px;
+   }
+}
+
+@media screen and (max-width:400px) {
+   .slider {
+      padding-top: 80px;
+   }
+}
+
 
 .slider h2 {
     max-width: 1210px;
@@ -18,7 +32,7 @@
 .swiper {
     width: 150%;
     height: 100%;
-    padding: 50px 0px;
+    padding-top: 50px;
     left: -25%;
 }
 
@@ -93,7 +107,7 @@
 .swiper-slide p {
     user-select: none;
     text-align: center;
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     visibility: hidden;
     font-family:'Montserrat-Light';
     font-weight: 300;
@@ -158,7 +172,7 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     .swiper {
         width: 300%;
         height: 100%;

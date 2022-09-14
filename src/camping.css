@@ -1,7 +1,7 @@
 .camping {
    position: relative;
    width: 100%;
-   margin: 0px 0px 215px 0px;
+   padding-top: 150px;
 }
 
 .ornament-img1 {
@@ -54,13 +54,13 @@
 
 @media screen and (max-width:768px) {
    .camping {
-      margin: 0px 0px 130px 0px;
+      padding-top: 100px;
    }
 }
 
 @media screen and (max-width:400px) {
    .camping {
-      margin: 0px 0px 100px 0px;
+      padding-top: 80px;
    }
 }
 
